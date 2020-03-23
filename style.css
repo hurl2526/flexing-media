@@ -1,8 +1,44 @@
-.square {
+.container{
+display: flex;
+}
+
+.squares {
   background-color: green;
   font-size: 4em;
   color: red;
   width: 80px;
   height: 80px;
   border: 2px solid orange;
+}
+@media (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+  .container {
+    flex-direction:row ;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+  .container {
+    flex-direction: column ;
+  }
+  .twoOfTen{
+      display: flex;
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 1001px){
+  .container {
+    flex-direction: row;
+
+  }
+  .twoOfTen {
+    display: flex;
+    flex-direction: row;
+  }
 }
